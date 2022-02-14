@@ -33,7 +33,7 @@ namespace TelegramBot
             // Для остановки бота.
             using var cts = new CancellationTokenSource();
 
-            bot.ReceiveAsync(
+            await bot.ReceiveAsync(
                HandleUpdateAsync,
                HandleErrorAsync,
                receiverOptions,
